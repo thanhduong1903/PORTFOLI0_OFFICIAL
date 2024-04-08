@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "PORTFOLI0_OFFICIAL/1.0.0": {
+        "runtime": {
+          "PORTFOLI0_OFFICIAL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PORTFOLI0_OFFICIAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/queriesmedia.site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PORTFOLI0_OFFICIAL.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="container">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <p class="logo-text">Matthew</p>
+            </div>
+            <ul class="nav-link">
+                <li class="link"><a href="#education">Education</a></li>
+                <li class="link"><a href="#experience">Experience</a></li>
+                <li class="link"><a href="#skills">Skills</a></li>
+                <li class="link"><a href="#project">Projects</a></li>
+            </ul>
+            <div class="nav-button">Hiring me</div>
+        </nav>
+
+        
+        <nav class="nav-mini">
+            <div class="mini-logo">
+                <p class="mini-text">Matthew</p>
+            </div>
+            <div class="clsShowHide" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mini-link">
+            <li class="m-link"><a onclick="toggleMenu()" href="#about">About me</a></li>
+            <li class="m-link"><a onclick="toggleMenu()" href="#experience">Experience</a></li>
+            <li class="m-link"><a onclick="toggleMenu()" href="#skills">Skills</a></li>
+            <li class="m-link"><a onclick="toggleMenu()" href="#project">Projects</a></li>
+            <li class="m-link"><a onclick="toggleMenu()" href="#hiring">Hiring us</a></li>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/16707960cf.js" rossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

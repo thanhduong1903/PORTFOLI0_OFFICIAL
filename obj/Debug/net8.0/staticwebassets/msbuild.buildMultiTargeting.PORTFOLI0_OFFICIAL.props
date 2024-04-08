@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PORTFOLI0_OFFICIAL.props" />
+</Project>
